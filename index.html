@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <meta name="description" content="">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section style="background-color: rgb(255, 255, 255); padding-bottom:80px;">
+    <svg viewBox="0 0 1920 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(26, 159, 255, 1)" d="M 0 0 L 971 110 L 971 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(26, 159, 255, 1)" d="M 970 110 L 1920 0 L 1920 0 L 970 0 Z" stroke-width="0"></path> </svg>
+    <h1> "If it makes you happy, it doesn't have to make sense to anyone else." </h1>
+    <h2> A confidence booster. </h2>
+    <center>
+    <div class="buttond">
+
+    <button id="btn1">
+        <span style="text-align: center; font-size:25px; font-family: 'Cerebri Sans', sans-serif;
+        font-weight: 400;">Response</span>
+        </center>
+    </button>
+        <div class="buttonr" id="buttonr">
+            <div class="p1">
+                <span style="text-align: justify;"> &emsp; &emsp; &emsp; As someone who spent the majority of his life lacking confidence and self-esteem, I can truly say that not focusing on the opinions of others and looking straight at your own path seems to help in regaining composure and trust of  your own abilities. Even until now, I still try to improve and gain more confidence day by day, as it will help me in the future for more opportunities and life-changing experiences. Thus, being unbothered by other people's opinions and just being happy is the most important part of life, as we enjoy every day and every step of the way. </span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="two">
+        <center>
+        <div class="p2" style="text-align: center;">
+            <span>In your opinion, what role does CSS play in the creation of a website? </span>
+        </div>
+        </center>
+        <div class="p3" style="text-align: justify;">
+            <span> &emsp; &emsp; &emsp; In my perspective, the main role of CSS in the creation of a website is to format the layout, give the webpage/website some sort of style or look throughout the elements for presentation purposes. It can also organize lines of code from HTML, and can save a lot of time because of the reduced file size and reduced bandwidth caused by the usage of the same .css file in multiple HTML files. For the user or designer's side, nonetheless, gives more accessibility and user-friendly features for easier maintenance and convenience. Overall, CSS plays a tremendous and impactful role in the creation of a website. </span>
+            <div>
+                <image src="css.png" height="200px" style="margin-left:50px; margin-top:-30px;"></image>
+            </div>
+        </div>
+    </div>
+
+    <div class="three">
+        <div class="p4">
+        <span> Cloma, Kyle Christian M. | 10-Yukawa </span> 
+        </div>
+    </div>
+    
+</body>
+
+<Script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script class="buttonclick">
+
+        $('#buttonr').hide();
+        
+        function showPackages(){
+                 }
+        $('#btn1').on('click', function(){
+            $('#buttonr').slideToggle('normal', function show_hide(){
+        $('#buttonr').toggle;});
+        });
+
+      </script>
+
+<script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+<a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <style>
+      html {
+        scroll-behavior: smooth;
+        }   
+        .to-top {
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#1f1f1f;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}    
+  </style>
+
+<script>
+    const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
+</script>
+
+
+</html>
